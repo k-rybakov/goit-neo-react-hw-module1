@@ -3,12 +3,10 @@ import userData from "./storage/userData.json";
 import Profile from "./components/Profile/Profile";
 import friends from "./storage/friends.json";
 import FriendList from "./components/FriendList/FriendList";
+import transactions from "./storage/transactions.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 function App() {
-  // friends.map(({ avatar, name, isOnline, id }) =>
-  //   console.log(avatar, name, isOnline, id)
-  // );
-
   return (
     <>
       <Profile
@@ -19,6 +17,7 @@ function App() {
         stats={userData.stats}
       />
       <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
     </>
   );
 }
