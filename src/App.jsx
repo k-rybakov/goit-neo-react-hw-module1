@@ -1,8 +1,14 @@
 import "./App.css";
 import userData from "./storage/userData.json";
 import Profile from "./components/Profile/Profile";
+import friends from "./storage/friends.json";
+import FriendList from "./components/FriendList/FriendList";
 
 function App() {
+  // friends.map(({ avatar, name, isOnline, id }) =>
+  //   console.log(avatar, name, isOnline, id)
+  // );
+
   return (
     <>
       <Profile
@@ -12,6 +18,7 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
     </>
   );
 }

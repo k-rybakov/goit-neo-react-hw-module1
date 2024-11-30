@@ -1,0 +1,16 @@
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
+
+.name {
+  color: black;
+  margin-top: 15px;
+}
+
+.status {
+  font-size: 15px;
+}
